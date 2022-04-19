@@ -1,0 +1,4 @@
+services:
+  finnavia_flight_info.flightinfoclient:
+    class: Drupal\finnavia_flight_info\FlightInfoClient
+    arguments: ['@logger.factory']

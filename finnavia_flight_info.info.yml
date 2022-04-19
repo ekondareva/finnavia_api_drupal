@@ -1,0 +1,5 @@
+name: 'Finnavia flight info'
+type: module
+description: 'Provides data from Finnavia API for flights info block.'
+core_version_requirement: ^8 || ^9
+package: 'Finnavia'

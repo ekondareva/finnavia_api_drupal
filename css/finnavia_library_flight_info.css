@@ -1,0 +1,41 @@
+.filters {
+  display: flex;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+.flights__box {
+  background-color: #0a6fb4;
+  display: flex;
+  flex-direction: column;
+}
+.flight_header {
+  display: flex;
+  border-bottom: 1px solid silver;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.flight_header > div {
+  flex: 1;
+}
+
+.flights__airport {
+  color: gold;
+  font-weight: bold;
+}
+
+.flights__flight_number {
+  color: silver;
+  font-weight: bold;
+}
+
+.flight {
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  padding: 1rem 0.5rem;
+}
+
+.flight > div {
+  flex: 1;
+  color: silver;
+}

@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function finnavia_flight_info_theme() {
+  return [
+    'finnavia_flight_block' => [
+      'variables' => [
+        'airport' => NULL,
+        'type' => NULL,
+        'flights' => NULL
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,52 @@
+{%
+  set classes = [
+  'paragraph',
+]
+%}
+
+{% block paragraph %}
+  {% block content %}
+    {{ attach_library('finnavia_flight_info/finnavia-library-flight-info') }}
+    <div class="flights_container">
+      <h2>FINNAIR FLIGHTS</h2>
+      <div class="filters">
+        <select class="filters__type">
+          <option value="all">All</option>
+          <option value="arr">Arrivals</option>
+          <option value="dep">Departures</option>
+        </select>
+        <select class="filters__airport">
+          <option value="all">All</option>
+          <option value="HEL">Helsinki</option>
+          <option value="KTT">Kittilä</option>
+          <option value="KOK">Kokkola</option>
+          <option value="KEM">Kemi</option>
+          <option value="KAJ">Kajaani</option>
+          <option value="OUL">Oulu</option>
+        </select>
+      </div>
+      <div class="flights__box">
+        <div class="flight_header">
+          <div>Airport</div>
+          <div>Flight number</div>
+          <div>Destination</div>
+          <div>Date</div>
+          <div>Gate</div>
+          <div>Status</div>
+        </div>
+        <div class="flight_content">
+          {% for flight in flights %}
+            <div class="flight">
+              <div class="flights__airport">{{ flight.airport }}</div>
+              <div class="flights__flight_number">{{ flight.fltnr }}</div>
+              <div class="flights__flight_route">{{ flight.routeName }}</div>
+              <div class="flights__date">{{ flight.sdt }}</div>
+              <div>{{ flight.gate }}</div>
+              <div>{{ flight.prt }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+{% endblock paragraph %}

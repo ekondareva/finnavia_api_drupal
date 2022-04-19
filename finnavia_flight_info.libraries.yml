@@ -1,0 +1,12 @@
+finnavia-library-flight-info:
+  version: 1.x
+  js:
+    js/finnavia_library_flight_info.js: {}
+  css:
+    theme:
+      css/finnavia_library_flight_info.css: { }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once

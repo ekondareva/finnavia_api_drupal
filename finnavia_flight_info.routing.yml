@@ -1,0 +1,6 @@
+finnavia_flight_info.info:
+  path: '/ajax_get_flight_data/{type}/{airport}'
+  defaults:
+    _controller: '\Drupal\finnavia_flight_info\Controller\FinnaviaFlightController::getFlightInfo'
+  requirements:
+    _permission: 'access content'
